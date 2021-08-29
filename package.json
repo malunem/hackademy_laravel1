@@ -11,8 +11,16 @@
     },
     "devDependencies": {
         "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
+        "laravel-mix": "^6.0.28",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.3.6",
+        "sass-loader": "^12.1.0",
+        "webpack": "^5.51.1"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.9.3",
+        "bootstrap": "^5.1.0",
+        "urlsearchparams": "^0.1.1",
+        "uuid": "^7.0.3"
     }
 }

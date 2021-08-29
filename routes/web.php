@@ -14,8 +14,12 @@ use App\Http\Controllers\PublicController;
 |
 */
 
-Route::get('/', [PublicController::class, 'getAllRegions'])->name('homepage');
+Route::get('/', [PublicController::class, 'getHomepage'])->name('homepage');
 
-Route::get('/regione-{region}', [PublicController::class, 'getSingleRegion'])->name('regione');
+Route::get('/contattaci', [PublicController::class, 'getContactPage'])->name('contattaci');
 
-Route::get('/ricetta-{ricetta}', [PublicController::class, 'getRecipe'])->name('ricetta');
+Route::post('/contattaci', [PublicController::class, 'postMessage'])->name('postMessage');
+
+Route::get('/{region}', [PublicController::class, 'getRegionPage'])->name('regione');
+
+Route::get('/{region}/{recipe}', [PublicController::class, 'getRecipePage'])->name('ricetta');
