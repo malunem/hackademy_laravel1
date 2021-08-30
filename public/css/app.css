@@ -11371,9 +11371,6 @@ a:hover{
 	color: var(--dark);
 	background-color: var(--light);
 	border-top: 1px solid #e5e5e5;
-	position: absolute;
-    bottom: 0;
-	width: 100%;
 }
 
 .footer-brand{
@@ -11393,6 +11390,7 @@ a:hover{
 
 .form{
 	width: 80vw;
+	height: 60vh;
 }
 
 @media screen and (min-width: 768px) {

@@ -22,16 +22,16 @@
                     <form class="form mt-5" method="POST" action="{{route('postMessage')}}">
                         @csrf
                         <div class="mb-3">
-                            <label for="contactFullname" class="form-label">Nome e cognome</label>
-                            <input name="contact-fullname" value="{{old('contact-fullname')}}" type="text" class="custom-form" id="contact-fullname">
+                            <label class="form-label">Nome e cognome</label>
+                            <input name="contact-fullname" value="{{old('contact-fullname')}}" type="text" class="custom-form">
                           </div>
                         <div class="mb-3">
-                          <label for="contact-email" class="form-label">Indirizzo email</label>
-                          <input name="contact-email" value="{{old('contact-email')}}" type="email" class="custom-form" id="contact-email">
+                          <label class="form-label">Indirizzo email</label>
+                          <input name="contact-email" value="{{old('contact-email')}}" type="email" class="custom-form">
                         </div>
                         <div class="mb-3">
-                          <label for="contact-message" class="form-label">Scrivi il tuo messaggio:</label>
-                          <textarea name="contact-message" value="{{old('contact-message')}}" class="custom-form" id="contact-message" rows="3"></textarea>
+                          <label class="form-label">Scrivi il tuo messaggio:</label>
+                          <textarea name="contact-message" value="{{old('contact-message')}}" class="custom-form" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn">Invia</button>
                     </form>
